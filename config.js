@@ -1,0 +1,27 @@
+"use strict";
+var COMM_NAME = 'PUBNUB_TEST';
+var SERVER_PREFIX = 'server_';
+var CONNECT_SUFFIX = 'connect_' + COMM_NAME + '_';
+var IS_PROD = false;
+var SUBSCRIBE_KEY;
+var PUBLISH_KEY;
+
+if (IS_PROD) {
+  SUBSCRIBE_KEY = 'sub-c-4010e5ea-9442-11e3-bca1-02ee2ddab7fe';
+  PUBLISH_KEY = 'pub-c-fc798805-c1c5-41bc-93a4-582b05ea1bbb';
+} else {
+  SUBSCRIBE_KEY = 'sub-c-f7fbdfb0-6383-11e3-a6c8-02ee2ddab7fe';
+  PUBLISH_KEY = 'pub-c-f5fe76eb-7bfd-43ba-b207-86792351949e';
+}
+
+module.exports = {
+  PUBNUB_PUBLISH_KEY: '',
+  PUBNUB_SUBSCRIBE_KEY: '',
+  COMM_NAME: COMM_NAME,
+  CLIENT_PREFIX: 'client_',
+  SERVER_PREFIX: SERVER_PREFIX,
+  CONNECT_SUFFIX: 'connect_' + COMM_NAME + '_',
+  SERVER_CONNECT_CHANNEL_PREFIX: SERVER_PREFIX + CONNECT_SUFFIX,
+  SUBSCRIBE_KEY: SUBSCRIBE_KEY,
+  PUBLISH_KEY: PUBLISH_KEY
+};
