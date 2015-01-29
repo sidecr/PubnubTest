@@ -14,5 +14,6 @@ sudo chown $USER:$GOUP $LOG_DIR
 cd $STATSD_ROOT
 
 npm install > /dev/null 2>&1
+npm install statsd-librato-backend > /dev/null 2>&1
 
 exec nodejs stats.js $CONFIG_FILE >> $LOG_FILE 2>&1
