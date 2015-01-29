@@ -86,9 +86,11 @@ function success_callback(channel, result) {
 };
 
 function error_callback(channel, error) {
-  publish_errors_per_sec += 1;
+  // Turn all args into a true arguments array
+  var args = Array.prototype.slice.call(arguments);
 
-  logger.error('Error Callback: ' + JSON.stringify(error));
+  publish_errors_per_sec += 1;
+  logger.error('Error Callback: ' + JSON.stringify(args));
 
   // Schedule the next transmission
   publish_timeout_id = setTimeout(transmit_heartbeat, config.transmit_delay, channel);
