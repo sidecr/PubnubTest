@@ -109,4 +109,6 @@ Optional Variables:
     token:  "bbcd56cce1294b43007bf05f21c60d031026289ac7241857b54ef8d5828346a4",
     source: "pubnub-mon"
   }
+, flush_counts:    false
+, deleteIdleStats: false
 }
