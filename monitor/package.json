@@ -1,0 +1,20 @@
+{
+  "name": "pubnub-monitor",
+  "version": "0.0.1",
+  "author": "Mayank Patel",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "curry": "^1.2.0",
+    "lodash": "^2.4.1",
+    "node-getopt": "^0.2.3",
+    "node-statsd": "^0.1.1",
+    "pubnub": "^3.7.8",
+    "winston": "^0.8.3",
+    "yamljs": "^0.2.1"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": "~0.10.0"
+  }
+}

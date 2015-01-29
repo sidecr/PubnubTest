@@ -1,0 +1,9 @@
+/var/log/pubnub/*.log {
+  daily
+  missingok
+  rotate 20
+  size 100M
+  compress
+  delaycompress
+  notifempty
+}
