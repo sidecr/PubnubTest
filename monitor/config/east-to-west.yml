@@ -3,7 +3,7 @@ src: 'us-east-1'
 dst: 'us-west-1'
 
 # Delay between heartbeat messages in milliseconds
-transmit_delay: 300
+transmit_delay: 5000
 
 statsd:
   host: localhost
